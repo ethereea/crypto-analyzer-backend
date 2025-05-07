@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: crypto-analyzer-api
+    env: python
+    buildCommand: "pip install -r requirements.txt && python3 -m textblob.download_corpora"
+    startCommand: "./start.sh"
+    plan: free
+    envVars: []
